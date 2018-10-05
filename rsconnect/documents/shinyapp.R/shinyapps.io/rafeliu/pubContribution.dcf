@@ -1,0 +1,12 @@
+name: pubContribution
+title: pubContribution
+username:
+account: rafeliu
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 494269
+bundleId: 1624575
+url: https://rafeliu.shinyapps.io/pubContribution/
+when: 1538726387.84987
+asMultiple: FALSE
+asStatic: FALSE
