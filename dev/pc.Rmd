@@ -264,12 +264,12 @@ p
 
 ```{r fig.height=8, fig.width=12}
 p <- candidate %>% 
-  filter(county == "新北市",
-         !is.na(pc.balance)) %>%
+  filter(!is.na(pc.balance)) %>%
   ggplot(aes(x = pc.out_total/10000, y = pc.in_total/10000, color = elected,
              text = sprintf("%s, %s, %s <br>%s%s <br>收入: %s <br>支出: %s <br>謄餘: %s <br>得票數: %s (%s %%)<br>2018 參選: %s", 
                             name, party, elected, county, district, pc.in_total, pc.out_total, pc.balance, votes, votes_percentage, thisyr))) +
   geom_point() + geom_abline(intercept = 0, slope = 1, colour='rgba(0,0,0,0.1)', size = 0.5) +
+  scale_color_manual(values = c("#00BFC4", "#F8766D")) +
   xlab("支出總額(萬元)") + ylab("受贈總額(萬元)") +
   theme(plot.title = element_text(size=14, face="bold"),
         plot.margin = margin(t = 10, r = 10, b = 10, l = 10),
