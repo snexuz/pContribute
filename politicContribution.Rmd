@@ -1,6 +1,6 @@
 ---
 title: '選錢選前 - 參選議員要花幾多錢'
-author: "sugerdaddyr"
+author: "chiahs"
 output:
   html_document:
     css: styles.css
