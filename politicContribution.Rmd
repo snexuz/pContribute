@@ -242,14 +242,14 @@ p <- candidate %>%
                             name, party, elected, county, district, pc.in_total, pc.out_total, pc.balance, votes, round(pc.out_total/votes, digits = 2)))) +
   geom_boxplot(outlier.shape = NA, width=1) +  # NO OUTLIERS
   geom_jitter(aes(colour = elected), width = 0.2, size = 0.8) +
+  xlab("支出總額(萬元)") + ylab("謄餘總額(萬元)") +
   scale_color_manual(values = c("#00BFC4", "#F8766D")) +
   theme(plot.title = element_text(size=14, face="bold"),
         plot.margin = margin(t = 1, r = 1, b = 1, l = 1, unit = "cm"),
         legend.title = element_blank()
         )
 p <- ggplotly(p, tooltip = "text") %>%
-  layout(title="2014 年議員候選人政治獻金滕餘分佈",
-         font=list(family = "微軟正黑體"))
+  layout(font=list(family = "微軟正黑體"))
 p$x$data[[1]]$marker$opacity <- "0"
 p
 ```
