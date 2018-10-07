@@ -98,9 +98,9 @@ nms <- levels(candidate$county)
 
 ## 選錢選前？
 
-選戰花費鉅資，四年一度選舉年，選舉費用的探討總是不乏熱門新聞版面，根據天下雜誌報導，一場地方選舉經費至少就需 348 億元[(註1)](https://www.cw.com.tw/article/article.action?id=5091061)。而對於候選人，除了賣房籌措選舉經費，政治獻金更是不可或缺的經費來源之一[(註2)](https://www.mirrormedia.mg/projects/political-contribution/#/)。雖陽光法案對於政治獻金或者經費有相關規定，一切依法、透明，候選人如何 smart 選舉[(註3)](https://buzzorange.com/2018/07/05/smart-yao-spents-zero-to-run-election/)，仍是選舉前不可不關注的焦點。
+選戰花費鉅資，四年一度選舉年，選舉費用的探討總是不乏熱門新聞版面，根據天下雜誌報導，一場地方選舉經費至少就需 348 億元[ (註1)](https://www.cw.com.tw/article/article.action?id=5091061)。而對於候選人，除了賣房籌措選舉經費，政治獻金更是不可或缺的經費來源之一[ (註2)](https://www.mirrormedia.mg/projects/political-contribution/#/)。雖陽光法案對於政治獻金或者經費有相關規定，一切依法、透明，候選人如何 smart 選舉[ (註3)](https://buzzorange.com/2018/07/05/smart-yao-spents-zero-to-run-election/)，仍是選舉前不可不關注的焦點。
 
-統計本屆政黨提名議員參選人，約有七成左右為連任、回鍋參選人[(註4)](https://www.facebook.com/50d50v/photos/pcb.2024364127788540/2024364087788544/?type=3&theater)，本次專案取得 [投票指南](https://councils.g0v.tw/) 網站[公開資料庫(2018.09)](https://github.com/g0v/councilor-voter-guide/blob/master/voter_guide/local_db.dump)，爬梳 2014 年各縣市議員參選人政治獻金申報資料，希望藉由圖表探索，了解政治獻金來源、使用與參選人間的關係。
+統計本屆政黨提名議員參選人，約有七成左右為連任、回鍋參選人[ (註4)](https://www.facebook.com/50d50v/photos/pcb.2024364127788540/2024364087788544/?type=3&theater)，本次專案取得 [投票指南](https://councils.g0v.tw/) 網站[公開資料庫(2018.09)](https://github.com/g0v/councilor-voter-guide/blob/master/voter_guide/local_db.dump)，爬梳 2014 年各縣市議員參選人政治獻金申報資料，希望藉由圖表探索，了解政治獻金來源、使用與參選人間的關係。
 
 
 ## 2014 年各縣市議員選舉花費
@@ -134,10 +134,10 @@ dat %>%
 
 - 各縣市皆以個人捐贈為主要來源
 - 惟連江縣，其政黨捐贈為最大宗，佔申報政治獻金 72.34%
-    - 今年修正之「政治獻金法」，對政黨捐贈之政治獻金做出限制，以避免大小黨因財力不均，產生不公平競爭的現象[(註5)](https://tw.news.yahoo.com/%E6%94%BF%E6%B2%BB%E7%8D%BB%E9%87%91%E6%B3%95%E4%B8%89%E8%AE%80-%E6%94%BF%E9%BB%A8%E6%8D%90%E5%8A%A9%E5%85%B6%E5%8F%83%E9%81%B8%E4%BA%BA%E6%9C%89%E4%B8%8A%E9%99%90-105800063.html)。
+    - 今年修正之「政治獻金法」，對政黨捐贈之政治獻金做出限制，以避免大小黨因財力不均，產生不公平競爭的現象[ (註5)](https://tw.news.yahoo.com/%E6%94%BF%E6%B2%BB%E7%8D%BB%E9%87%91%E6%B3%95%E4%B8%89%E8%AE%80-%E6%94%BF%E9%BB%A8%E6%8D%90%E5%8A%A9%E5%85%B6%E5%8F%83%E9%81%B8%E4%BA%BA%E6%9C%89%E4%B8%8A%E9%99%90-105800063.html)。
 - 營利事業捐贈項目則是另一個需被關注的議題，以宜蘭縣占比 42.16% 為最高，桃園及臺北市次之
     - 正常企業捐助政治獻金，除可提高政治參與外，政府也予以補助優惠鼓勵
-    - 不正常的捐贈，常使政客及政黨淪為企業私下掠取公共財資源的工具[(註6)](https://www.mirrormedia.mg/story/political-contribution003/)
+    - 不正常的捐贈，常使政客及政黨淪為企業私下掠取公共財資源的工具[ (註6)](https://www.mirrormedia.mg/story/political-contribution003/)
 
 ```{r fig.height=6, fig.width=12}
 p <- dat %>%
@@ -167,7 +167,7 @@ p
 透過政治獻金使用，可檢視是否有不正當的利益輸送，避免參選人左手轉右手之情形發生
 
 - 然 2014 年政治獻金資料僅提供大類別查詢，難以深入分析，且若要得知詳細捐贈資料，必須親自到監察院申請查閱書面資料
-- 五月通過的政治獻金法則明定，今年參選人會計報告書，必須明年八月上網公開[(註7)](http://news.ltn.com.tw/news/focus/paper/1228059)
+- 五月通過的政治獻金法則明定，今年參選人會計報告書，必須明年八月上網公開[ (註7)](http://news.ltn.com.tw/news/focus/paper/1228059)
 - 現有政治獻金使用資料顯示，宣傳為占比最高之費用，連江縣以公共關係費為占比最高，但金額與六都相較，則顯得小巫見大巫
 
 ```{r fig.height=6, fig.width=12}
@@ -297,6 +297,6 @@ ggplotly(p, tooltip="text") %>%
 - [政治獻金法](https://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=D0020049)
 - [陽光法案主題網](https://sunshine.cy.gov.tw/GipOpenWeb/wSite/ct?xItem=3126&ctNode=345&mp=2)
 - [投票指南](https://councils.g0v.tw/)
-- [原始碼及資料集]()
+- [原始碼及資料集](http://github.com/snexuz/pContribute/)
 
 
